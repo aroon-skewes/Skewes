@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VendoTech - Coming Soon - Revolutionizing vending with smart technology.">
+    <meta name="keywords" content="VendoTech, coming soon, vending machines, smart tech, innovation">
+    <meta name="author" content="VendoTech Team">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Skewes - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('background.jpg') no-repeat center;
+            background-size: cover;
+            animation: panBackground 20s linear infinite;
+            z-index: 0;
+        }
+        .container {
+            text-align: center;
+            z-index: 1;
+            padding: 20px;
+        }
+        .logo img {
+            height: 100px;
+            width: auto;
+            filter: brightness(0) invert(1);
+            animation: spinIn 1.5s ease-out forwards;
+        }
+        .title {
+            font-size: 4.5em;
+            font-weight: 900;
+            margin: 30px 0;
+            animation: bounceText 2s infinite;
+        }
+        .subtitle {
+            font-size: 1.7em;
+            color: #fff;
+            margin-bottom: 50px;
+            animation: waveText 3s infinite;
+        }
+        .interactive-circle {
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: pulseCircle 2s infinite;
+        }
+        .interactive-circle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        .interactive-circle span {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: slideUp 2s ease-out forwards;
+        }
+        .social-links a {
+            color: #fff;
+            font-size: 1.8em;
+            padding: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: rotate(360deg) scale(1.2);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        /* Animations */
+        @keyframes panBackground {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-10%); }
+        }
+        @keyframes spinIn {
+            0% { transform: rotate(-180deg) scale(0); opacity: 0; }
+            100% { transform: rotate(0) scale(1); opacity: 1; }
+        }
+        @keyframes bounceText {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes waveText {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        @keyframes pulseCircle {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes slideUp {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .title { font-size: 3em; }
+            .subtitle { font-size: 1.3em; }
+            .interactive-circle { width: 120px; height: 120px; }
+            .interactive-circle span { font-size: 1em; }
+            .social-links a { font-size: 1.5em; padding: 10px; }
+        }
+        @media (max-width: 480px) {
+            .logo img { height: 80px; }
+            .title { font-size: 2.2em; }
+            .subtitle { font-size: 1em; }
+            .interactive-circle { width: 100px; height: 100px; }
+            .interactive-circle span { font-size: 0.9em; }
+            .social-links { gap: 15px; }
+            .social-links a { font-size: 1.2em; padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="logo"><img src="1000010588.png" alt="Skewes Logo"></div>
+        <h1 class="title">Coming Soon</h1>
+        <p class="subtitle">The future of vending technology is on its way.</p>
+        <div class="interactive-circle">
+            <a  href="index.html " style="text-decoration: none; color: #fff;"><span>Return To home</span>  </a>   
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</body>
+</html>
