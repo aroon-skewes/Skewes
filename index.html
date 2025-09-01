@@ -244,10 +244,10 @@
             height:5rem;
         }
         .marquee.right-to-left {
-            animation: slide-right 10s linear infinite;
+            animation: slide-right 20s linear infinite;
         }
         .marquee.left-to-right {
-            animation: slide-left 10s linear infinite;
+            animation: slide-left 20s linear infinite;
         }
         .inside-text {
             margin: 50px 0;
@@ -578,12 +578,12 @@
             100% { transform: translateY(0); }
         }
         @keyframes slide-right {
-            0% { transform: translateX(-250%); }
+            0% { transform: translateX(-100%); }
             100% { transform: translateX(0); }
         }
         @keyframes slide-left {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-250%); }
+            100% { transform: translateX(-100%); }
         }
         @keyframes spinPulse {
             0% { transform: rotateY(0deg); }
@@ -662,6 +662,8 @@
             .hero-content h1 { font-size: 2em; }
             .hero-image { height: 200px; }
             .marquee { height: 40px; font-size: 1.1em; }
+            .marquee.right-to-left {animation: slide-right 10s linear infinite;}
+            .marquee.left-to-right {animation: slide-left 10s linear infinite;}
             .inside-text { font-size: 0.9em; padding: 15px; margin: 40px 0px; }
             .card { width: 120px; padding: 15px; }
             .card h4{font-size: 0.6rem;}
@@ -671,6 +673,14 @@
             .blog-post p { font-size: 1em; }
             .contact-iframe { max-width: 350px; height: 400px; }
             .footer .social-links a { font-size: 1.1em; padding: 6px; }
+             @keyframes slide-right {
+            0% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+             }
+            @keyframes slide-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-300%); }
+             }
         }
     </style>
     <script>
@@ -851,6 +861,7 @@
 </body>
 
 </html>
+
 
 
 
